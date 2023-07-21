@@ -1,4 +1,4 @@
-.App {
+/* .App {
   text-align: center;
 }
 
@@ -26,8 +26,8 @@
 
 .App-link {
   color: #61dafb;
-}
-
+} */
+/* 
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
@@ -35,4 +35,101 @@
   to {
     transform: rotate(360deg);
   }
+} */
+
+html, body {
+  background-color: lightgrey;
+  width: 100%;
+  height : 100%;
+  padding: 0;
+  margin : 0;
+  
+}
+
+.container {
+  width : 100%;
+  display: flex;
+  
+}
+
+.leftCol {
+  background-color: blue;
+  width: 50%;
+}
+
+.rightCol {
+  width: 50%;
+  background-color: yellow;
+  height: 100%;
+}
+
+.box1 {
+  margin: 20px 20px;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+.box1 img{
+  width: 100%;
+  height: 100%;
+  border : 1px solid black;
+  border-radius: 10px;
+}
+.formContainer{
+  background-color: brown;
+  border : 1px solid black;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  margin: 20px;
+  align-items: center;
+}
+.formContainer form {
+  background-color: yellow;
+  width: 90%;
+}
+.formContainer form input {
+  width: 80%;
+  padding: 15px;
+  border-radius: 20px;
+  border: none;
+}
+.formContainer form input:focus {
+  border: 4px solid blue;
+}
+.labelError {
+  font-size: 24px;
+  margin-left: 2%;
+  display : flex;
+  align-items: center;
+}
+.error {
+  font-size: 18px;
+  background-color: lightgrey;
+  color: red;
+  height: 80%;
+  margin-left: 5%;
+  padding: 0 2%;
+  border-radius: 20px;
+}
+.submitButton {
+  display: flex;
+  align-self: flex-start;
+  background-color: rgb(144, 238, 144);
+  padding-top: 1%;
+  padding-left: 2%;
+  padding-right: 8%;
+  margin-top: 4%;
+  border-radius: 15px;
+  width : 30%;
+  height: 50px;
+  align-items: center;
+  /* justify-content: space-evenly; */
+}
+.box3{
+  margin-top: 20px;
+  margin-left: 20px;
+  width: calc(25vw - 20px);
+  background-color: white;
+  border : 1px solid black;
+  border-radius: 10px; 
 }

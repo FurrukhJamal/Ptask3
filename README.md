@@ -13,5 +13,5 @@ clone this repo by running
 
 and then 
 
-### `npm run`
+### `npm start`
 

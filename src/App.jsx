@@ -92,8 +92,9 @@ function App() {
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas ex lectus, eleifend eget odio at, aliquam convallis augue. Etiam eros lacus, mattis eget urna vulputate, rutrum fringilla dolor. Proin nunc erat, feugiat quis metus sed, porta vulputate sem. Integer ut eros aliquam, facilisis quam et, feugiat felis. Nunc auctor eros at risus consequat,</p>
         </div>
       </div>
+      
       {/* the right column for the image */}
-      <div className='rightCol' style = {{height : HEIGHT}}>
+      <div className='rightCol' >
         <div className = "box1">
           <img src= {image1} alt="scenery" />
         </div>

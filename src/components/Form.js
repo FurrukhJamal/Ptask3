@@ -65,10 +65,10 @@ function Form() {
                 </div>
                 )}
             </div>
-            <input type="text" placeholder='Enter GUID' value = {guid} onChange={handleInputChange}/>
+            <input {...(submitted && { disabled: true })} type="text" placeholder='Enter GUID' value = {guid} onChange={handleInputChange}/>
             
             {/* custom submit button for form with spinner and tick Mark logic */}
-            <button type = "submit" className='submitButton'>
+            <button {...(submitted && { disabled: true })} type = "submit" className='submitButton'>
                 <div 
                 style = {{
                     marginLeft : "-5%", 

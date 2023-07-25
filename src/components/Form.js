@@ -54,15 +54,15 @@ function Form() {
     return (
         <div className='formContainer'>
             
-            {/* The GUID Form */}
-            <form action = "#" onSubmit={handleSubmit}>
+          {/* The GUID Form */}
+          <form action = "#" onSubmit={handleSubmit}>
             <div className = "labelError">
                 <p>Enter a valid GUID here</p>
                 
                 {validationError && (
-                <div className='error'>
-                    <p>Invalid GUID</p>
-                </div>
+                  <div className='error'>
+                      <p>Invalid GUID</p>
+                  </div>
                 )}
             </div>
             <input {...(submitted && { disabled: true })} type="text" placeholder='Enter GUID' value = {guid} onChange={handleInputChange}/>
@@ -70,22 +70,22 @@ function Form() {
             {/* custom submit button for form with spinner and tick Mark logic */}
             <button {...(submitted && { disabled: true })} type = "submit" className='submitButton'>
                 <div 
-                style = {{
-                    marginLeft : "-5%", 
-                    visibility : (!submitted && !success) ? "hidden" : "", 
-                    display : "flex", 
-                    width : "50%", 
-                    height : "60%", 
-                    justifyContent: "center", 
-                    alignItems : "center" 
+                  style = {{
+                      marginLeft : "-5%", 
+                      visibility : (!submitted && !success) ? "hidden" : "", 
+                      display : "flex", 
+                      width : "50%", 
+                      height : "60%", 
+                      justifyContent: "center", 
+                      alignItems : "center" 
                 }}>
-                <img src= {!success ? spinner : checkMark} style = {{width : "85%", height : "85%",}} alt="loadingIcon" />
+                  <img src= {!success ? spinner : checkMark} style = {{width : "85%", height : "85%",}} alt="loadingIcon" />
                 </div>
                 <div>
-                Submit
+                  Submit
                 </div>
             </button>
-            </form>
+          </form>
         </div>
   )
 }
